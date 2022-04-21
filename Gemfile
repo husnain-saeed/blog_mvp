@@ -27,7 +27,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
 gem 'bulma-rails', '~> 0.9.3'
 gem 'simple_form', '~> 5.1'
 
@@ -55,7 +54,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # guard
   gem 'guard', '~> 2.18'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
 end
 
 group :test do
